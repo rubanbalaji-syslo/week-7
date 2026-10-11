@@ -1,80 +1,82 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%ASCII PDF generated for Week 7 solution
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
 endobj
 4 0 obj
-<<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<<
-/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 7 0 obj
-<<
-/Author (Week 7 Solutions) /CreationDate (D:20261011070546+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261011070546+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Problem 1 - Morning Wake-Up Circuit) /Trapped /False
->>
+<< /Length 2571 >>
+stream
+BT /F2 15 Tf 46 800.00 Td (Morning Wake-Up Circuit) Tj ET
+BT /F2 9.5 Tf 46 779.00 Td (Week 7 Assignment - Problem 1 \(Basic\)) Tj ET
+BT /F1 8.7 Tf 46 763.00 Td (Ringable lets unrelated devices share one operation. AlarmClock and Doorbell implement the) Tj ET
+BT /F1 8.7 Tf 46 752.00 Td (interface directly, and ringAll dispatches ring\(\) polymorphically.) Tj ET
+BT /F2 10.5 Tf 46 737.00 Td (Java solution) Tj ET
+BT /F3 7.3 Tf 43 723.00 Td (interface Ringable {) Tj ET
+BT /F3 7.3 Tf 43 714.60 Td (    String ring\(\);) Tj ET
+BT /F3 7.3 Tf 43 706.20 Td (}) Tj ET
+BT /F3 7.3 Tf 43 694.30 Td (class AlarmClock implements Ringable {) Tj ET
+BT /F3 7.3 Tf 43 685.90 Td (    private final String time;) Tj ET
+BT /F3 7.3 Tf 43 677.50 Td (    AlarmClock\(String time\) { this.time = time; }) Tj ET
+BT /F3 7.3 Tf 43 669.10 Td (    public String ring\(\) {) Tj ET
+BT /F3 7.3 Tf 43 660.70 Td (        return "Alarm ringing for " + time;) Tj ET
+BT /F3 7.3 Tf 43 652.30 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 643.90 Td (}) Tj ET
+BT /F3 7.3 Tf 43 632.00 Td (class Doorbell implements Ringable {) Tj ET
+BT /F3 7.3 Tf 43 623.60 Td (    private final String location;) Tj ET
+BT /F3 7.3 Tf 43 615.20 Td (    Doorbell\(String location\) { this.location = location; }) Tj ET
+BT /F3 7.3 Tf 43 606.80 Td (    public String ring\(\) {) Tj ET
+BT /F3 7.3 Tf 43 598.40 Td (        return "Doorbell ringing at " + location;) Tj ET
+BT /F3 7.3 Tf 43 590.00 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 581.60 Td (}) Tj ET
+BT /F3 7.3 Tf 43 569.70 Td (public class Main {) Tj ET
+BT /F3 7.3 Tf 43 561.30 Td (    static void ringAll\(Ringable[] devices\) {) Tj ET
+BT /F3 7.3 Tf 43 552.90 Td (        for \(Ringable device : devices\) {) Tj ET
+BT /F3 7.3 Tf 43 544.50 Td (            System.out.println\(device.ring\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 536.10 Td (        }) Tj ET
+BT /F3 7.3 Tf 43 527.70 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 519.30 Td (    public static void main\(String[] args\) {) Tj ET
+BT /F3 7.3 Tf 43 510.90 Td (        AlarmClock a = new AlarmClock\("7:00 AM"\);) Tj ET
+BT /F3 7.3 Tf 43 502.50 Td (        Doorbell d = new Doorbell\("Front Door"\);) Tj ET
+BT /F3 7.3 Tf 43 494.10 Td (        ringAll\(new Ringable[] { a, d }\);) Tj ET
+BT /F3 7.3 Tf 43 485.70 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 477.30 Td (}) Tj ET
+BT /F2 10 Tf 46 465.90 Td (Sample output) Tj ET
+BT /F3 8 Tf 46 452.90 Td (Alarm ringing for 7:00 AM) Tj ET
+BT /F3 8 Tf 46 443.40 Td (Doorbell ringing at Front Door) Tj ET
+BT /F1 7.5 Tf 46 431.90 Td (Note: Both classes implement Ringable directly; they do not need a shared parent class.) Tj ET
+endstream
 endobj
 8 0 obj
-<<
-/Count 1 /Kids [ 5 0 R ] /Type /Pages
->>
-endobj
-9 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1406
->>
-stream
-Gau1-D,]IQ&BE]".<_*C'\X`^59$IU"n$&N;s*;+cFkWSU"CRQYcXEH-c]KfmTmpFEIpRSE-5aoZ)-:VrcY\U$4_N`rD!`No*HCD;P5X9mXY/PLWM4=HF!9bO2PAadL\qh3C+Ve8SAh7&\S!\Y67':1ldb:4J+SiL]StIn0?r2@CWn8_p)NR+?&p,'"6qZYoQ4tr4l)J(J*Hh%[p<PZ[oP/HS73!Z0qlFZ@IT%S3K7A7rUAgZsp!MZ343?n8kS>\mm1m%Uno/-JoY9"*9#d8`]^+]")T7j$3i2I`:5l"\p"/'F1Sao+7@!K5nJIQadM0K(?StN'hMN^&u+>E.$mO[IN9L$pTS?kYNYBkE?>Q.lkk"Ja8BT8ubdR1O.4epsF#$\.C-lL$ll"X`(UNa45q7:p$3H1^SMoA;mnu?6bb&@V`epV*RFQheT'sjSsl@VYNoc7lZ:1WY2YDi2+HjDqKY--1fjOUsHp*R["[gHc[2d<jh6j0/BQ:.<`>o%?0?XkZUHrrOL4hT48s]a^>@mZQ?8'4hu*8$:o6+5#eug1+Cb<kBR6]4]<>2a['>n9gV9MR]mM&?Imic;)51No9;NjMZTr(Nr'AuR^9"<])r>&n4NbnOMs?FRQ'KCO;ZsCg35[=\$!KW<r>^mJn`K9CSo`4b5g>M-#TKnK7I'u+c3:T'qfbAKOFr@F/S!tn@I#%V$20lE-li`5CDbqZbJ%P3&A+U0W>(]@Pd+KD6l?+@Y+1\GG8Vnk=:G^T<;>*9C$:EdXh5KK>IE=_[XfOdeBI[jsb\mDUbh6HKO4B[gT@'=QNrSGQYg=42l?E9%^TcqsqYk^cm/CP(6DiYM,0=[hKDd1Tb%8aj*2uZ.lOSA[__d4u<6=1@8dt=IHTsGKADZgU_5%?SPDqGcW_?948u4Af[E[3Z[kMs+$%]"MWkbQ'sh=(:QrqjMa:UE'76j(BjUJ_*"#E05hAi4f%*n4EB8dV]FRI:koVt(iYgX%#1b7\>m@OAshhG0@rtTIWXR/E-AWR-EGHkf'ZdCg&@h2fO2s`dB,QNZY]^@1U->pgsbDWOX+k7+M9,e46D$+ei1em7<i&&H*,\GNdD5jJ(UYDI*7Y^CXY"PS5\bOGun_OcsmnS,:hn<)7f:(@.]XfK$^`dlClpkaMkWe^LI\FdF]FX0(jX6OEn6KOfJt[$,oi65E]#P@BjHmcHE<+q&k1*0C3G$0HZZR6BhlRJ0m9Lmm0]5TTQEtrNbe%<6r2NC-0f"Ql4\(Km7u2kR;OjfaB_<4p0:F9(AQ\DIfk'VCAQ6FTUt*3#E]>5<L"5m3IaNY?tQJGl>aMGr&POrinqUc0NDD<cc51Xqj,]L%Y5'X_&bq<o&Tpk6<8Hg%.fN2fC-,EA^+EWlrh&b>(:7EP)SjpAP,AI=ma~>endstream
+<< /Title (Morning Wake-Up Circuit) /Author (Week 7 Solutions) /Producer (OpenAI) >>
 endobj
 xref
-0 10
+0 9
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000436 00000 n 
-0000000639 00000 n 
-0000000707 00000 n 
-0000001012 00000 n 
-0000001071 00000 n 
+0000000050 00000 n 
+0000000099 00000 n 
+0000000156 00000 n 
+0000000302 00000 n 
+0000000372 00000 n 
+0000000447 00000 n 
+0000000515 00000 n 
+0000003137 00000 n 
 trailer
-<<
-/ID 
-[<e970802342057c311671980c62917ca4><e970802342057c311671980c62917ca4>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 10
->>
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
 startxref
-2568
+3237
 %%EOF

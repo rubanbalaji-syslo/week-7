@@ -1,80 +1,94 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%ASCII PDF generated for Week 7 solution
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
 endobj
 4 0 obj
-<<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<<
-/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 7 0 obj
-<<
-/Author (Week 7 Solutions) /CreationDate (D:20261011070546+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261011070546+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Problem 5 - Package Drop-Off Log) /Trapped /False
->>
+<< /Length 3606 >>
+stream
+BT /F2 15 Tf 46 800.00 Td (Package Drop-Off Log) Tj ET
+BT /F2 9.5 Tf 46 779.00 Td (Week 7 Practice - Problem 5 \(Intermediate\)) Tj ET
+BT /F1 8.7 Tf 46 763.00 Td (DeliveryNote declares abstract confirmDelivery\(\) and overloads confirmDelivery\(signature\).) Tj ET
+BT /F1 8.7 Tf 46 752.00 Td (ParcelNote and LetterNote directly extend it. logAll\(\) demonstrates upcasting and polymorphic) Tj ET
+BT /F1 8.7 Tf 46 741.00 Td (dispatch.) Tj ET
+BT /F2 10.5 Tf 46 726.00 Td (Java solution) Tj ET
+BT /F3 7.3 Tf 43 712.00 Td (abstract class DeliveryNote {) Tj ET
+BT /F3 7.3 Tf 43 703.60 Td (    public abstract String confirmDelivery\(\);) Tj ET
+BT /F3 7.3 Tf 43 691.70 Td (    String confirmDelivery\(String signature\) {) Tj ET
+BT /F3 7.3 Tf 43 683.30 Td (        if \(signature == null || signature.trim\(\).isEmpty\(\)\) {) Tj ET
+BT /F3 7.3 Tf 43 674.90 Td (            return confirmDelivery\(\);) Tj ET
+BT /F3 7.3 Tf 43 666.50 Td (        }) Tj ET
+BT /F3 7.3 Tf 43 658.10 Td (        return confirmDelivery\(\) + ", signed by " + signature;) Tj ET
+BT /F3 7.3 Tf 43 649.70 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 641.30 Td (}) Tj ET
+BT /F3 7.3 Tf 43 629.40 Td (class ParcelNote extends DeliveryNote {) Tj ET
+BT /F3 7.3 Tf 43 621.00 Td (    private final String trackingId;) Tj ET
+BT /F3 7.3 Tf 43 612.60 Td (    ParcelNote\(String trackingId\) { this.trackingId = trackingId; }) Tj ET
+BT /F3 7.3 Tf 43 604.20 Td (    public String confirmDelivery\(\) {) Tj ET
+BT /F3 7.3 Tf 43 595.80 Td (        return "Parcel " + trackingId + " delivered";) Tj ET
+BT /F3 7.3 Tf 43 587.40 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 579.00 Td (}) Tj ET
+BT /F3 7.3 Tf 43 567.10 Td (class LetterNote extends DeliveryNote {) Tj ET
+BT /F3 7.3 Tf 43 558.70 Td (    private final String trackingId;) Tj ET
+BT /F3 7.3 Tf 43 550.30 Td (    LetterNote\(String trackingId\) { this.trackingId = trackingId; }) Tj ET
+BT /F3 7.3 Tf 43 541.90 Td (    public String confirmDelivery\(\) {) Tj ET
+BT /F3 7.3 Tf 43 533.50 Td (        return "Letter " + trackingId + " delivered";) Tj ET
+BT /F3 7.3 Tf 43 525.10 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 516.70 Td (}) Tj ET
+BT /F3 7.3 Tf 43 504.80 Td (public class Main {) Tj ET
+BT /F3 7.3 Tf 43 496.40 Td (    static void logAll\(DeliveryNote[] notes\) {) Tj ET
+BT /F3 7.3 Tf 43 488.00 Td (        for \(DeliveryNote note : notes\) {) Tj ET
+BT /F3 7.3 Tf 43 479.60 Td (            System.out.println\(note.confirmDelivery\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 471.20 Td (        }) Tj ET
+BT /F3 7.3 Tf 43 462.80 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 454.40 Td (    public static void main\(String[] args\) {) Tj ET
+BT /F3 7.3 Tf 43 446.00 Td (        ParcelNote p = new ParcelNote\("TRK-1"\);) Tj ET
+BT /F3 7.3 Tf 43 437.60 Td (        System.out.println\(p.confirmDelivery\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 429.20 Td (        System.out.println\(p.confirmDelivery\("J. Smith"\)\);) Tj ET
+BT /F3 7.3 Tf 43 420.80 Td (        DeliveryNote ref = p;) Tj ET
+BT /F3 7.3 Tf 43 412.40 Td (        logAll\(new DeliveryNote[] { ref, new LetterNote\("TRK-2"\) }\);) Tj ET
+BT /F3 7.3 Tf 43 404.00 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 395.60 Td (}) Tj ET
+BT /F2 10 Tf 46 384.20 Td (Sample output) Tj ET
+BT /F3 8 Tf 46 371.20 Td (Parcel TRK-1 delivered) Tj ET
+BT /F3 8 Tf 46 361.70 Td (Parcel TRK-1 delivered, signed by J. Smith) Tj ET
+BT /F3 8 Tf 46 352.20 Td (Parcel TRK-1 delivered) Tj ET
+BT /F3 8 Tf 46 342.70 Td (Letter TRK-2 delivered) Tj ET
+BT /F1 7.5 Tf 46 331.20 Td (Note: The overload calls confirmDelivery\(\) first, then appends the signature so the base delivery message) Tj ET
+BT /F1 7.5 Tf 46 322.20 Td (stays in one place.) Tj ET
+endstream
 endobj
 8 0 obj
-<<
-/Count 1 /Kids [ 5 0 R ] /Type /Pages
->>
-endobj
-9 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1519
->>
-stream
-Gb!#[D/\/e&H88.EA0'hh%E3,],D)[Rl4K_CrpDoqloDh/^]Ro8Q7-"WR9hBmmt,oEg/Q"111G#gEc7U\`\us-OLXg;=d#t!T),[k`c.V@C?1$&f5.mn:%h?H&mVRA5aR@(g()]!f:UK])d<UEN]@$,W#q)&0.$=e-eC[_/f]fKtb<)b@%p5(^RPKM"lsUU31e`&D(tJb6Ht:SqZIj;@ChUA7pTc,]ml660>EO46P3,^`g@Y=%]c#V4mrj,k.L(>V9.&X&h"P$YJ:290IEh9hF9Qr_VDS>B6B"M;Q\U%Y<0?&qh<8F;uQ#F+\qq\4UQF*C9I\kD-dX"lBA_><"[OJK"RY,e?c#-!'*bp+/N$;TpqWm%Hc_/AB\KhFUQcShCju-C-6f_h"2+3=aOLq`sPiU64=6,\&Z8i7'_86m`@XR(cAO-tm!HV#LlO9_"s@CNp4'LA[G!l:6$8TG#pM#G^!\md#*#ZP*ehD(s]SFTRQu+hVuf\"3fZ;E5$E\32A+fsAor[L!i\3H:"7G<AN:\6T%`'Sh@^)3_]7eg)HXU0+3HDbj[,?bS:`.I^Cc=AhGbi&4S:J8D(*JuP$r:bp.5Nk%e:"(]V3UKu'6EJ;TDYuL9rAa@pZIJuZT4H_2"gL3<g?@q)KOd?peXi#Q2'#*,-9*8W^VSB['Hm*%Gd&R:TAY\%-@!`r/Y)WT*0`gc8?ncE,c<+)_+<Y#QEWD_P2:']q':c%bBsAY9d;^\G/c1W#ZegBI_`Y<.+3AN'(sRp+?ufYNGlmRp9Q6]SFZ`KBfDW9"J?6HQV+[?hNtW_d)n`kg8.1`k^1hJfn]Q^KG`9=qL!K"DKQ\<a<EbO0)LUFDfu("Yrc!nEA=E!n"@#B>UrHqIle+^%nO=E#4IJ<e`SN3DO'(1>q#@R#@sSFs)\b/t^Tb)tZ<A]3D$"TCRQr3cDmJ_M:e:W]'+4Z97c@giJDkKh(g]ENUS$e^;EQ=9V$KPl:g%eKY9h6q9>(\Zl*q[VI64`_hf<hPNA(.HjDl5Hn(*dAk^q\%Y1[@Zl/tDp)$;bY<;BLSSgZ_s877lrO.)$.)2&(W3I4NY5LmbV41>sjY?L5,\D=n9`bcZS_VMZROi2T[:3.VWCH)9fdnQ7uFE"rlj\"oXEfTHLZcNC/GU.*P>Y&Vi[%:dmqI\/`Eu@%L`jbjDUlF:BO`%c["XX6D[i_F"[U+RNT>[k"MM/XFFu*uj@F+.Y7^q%cn)c="#m[U`OT8%Yg2BHcKI`@#PpS4t=nYZl'h-=Wi0s8cP]G89B,*q-<Mel&XFPW!>0YU/jP>3lhd-Z>ORO4pALtJr_a(@3Q0)0X7(1Bp/?p#PW'Q<ko'5([_pG(Ll3UC]*Gtp8I_`;e&Tl5!gRn6(F^'10?IDTf$?Jo4OB/QYH!TXI/7<B]Q?-B2UU#;d\9N3ii;FI5f.&TG9)a*iK<@Cm$[O_Nq3oJGN_M4Xa7KitDgZE#oVk9JAJe@j]BIn--.dR6@0E()'mVDK^*;(u/$BD#'+'$c!/q=EjT~>endstream
+<< /Title (Package Drop-Off Log) /Author (Week 7 Solutions) /Producer (OpenAI) >>
 endobj
 xref
-0 10
+0 9
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000436 00000 n 
-0000000639 00000 n 
-0000000707 00000 n 
-0000001009 00000 n 
-0000001068 00000 n 
+0000000050 00000 n 
+0000000099 00000 n 
+0000000156 00000 n 
+0000000302 00000 n 
+0000000372 00000 n 
+0000000447 00000 n 
+0000000515 00000 n 
+0000004172 00000 n 
 trailer
-<<
-/ID 
-[<6651a5b35f20e86c293422e75cd17963><6651a5b35f20e86c293422e75cd17963>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 10
->>
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
 startxref
-2678
+4269
 %%EOF

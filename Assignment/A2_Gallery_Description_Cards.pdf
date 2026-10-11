@@ -1,80 +1,86 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%ASCII PDF generated for Week 7 solution
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
 endobj
 4 0 obj
-<<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<<
-/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 7 0 obj
-<<
-/Author (Week 7 Solutions) /CreationDate (D:20261011070546+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261011070546+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Problem 2 - Gallery Description Cards) /Trapped /False
->>
+<< /Length 2978 >>
+stream
+BT /F2 15 Tf 46 800.00 Td (Gallery Description Cards) Tj ET
+BT /F2 9.5 Tf 46 779.00 Td (Week 7 Assignment - Problem 2 \(Basic\)) Tj ET
+BT /F1 8.7 Tf 46 763.00 Td (ArtPiece is abstract and assigns every object a unique final ID in its constructor. Painting and) Tj ET
+BT /F1 8.7 Tf 46 752.00 Td (Sculpture directly extend it and provide different descriptions.) Tj ET
+BT /F2 10.5 Tf 46 737.00 Td (Java solution) Tj ET
+BT /F3 7.3 Tf 43 723.00 Td (abstract class ArtPiece {) Tj ET
+BT /F3 7.3 Tf 43 714.60 Td (    private static int nextId = 1001;) Tj ET
+BT /F3 7.3 Tf 43 706.20 Td (    private final String pieceId;) Tj ET
+BT /F3 7.3 Tf 43 697.80 Td (    ArtPiece\(\) { pieceId = "ART-" + nextId++; }) Tj ET
+BT /F3 7.3 Tf 43 689.40 Td (    public abstract String describe\(\);) Tj ET
+BT /F3 7.3 Tf 43 681.00 Td (    String getPieceId\(\) { return pieceId; }) Tj ET
+BT /F3 7.3 Tf 43 672.60 Td (}) Tj ET
+BT /F3 7.3 Tf 43 660.70 Td (class Painting extends ArtPiece {) Tj ET
+BT /F3 7.3 Tf 43 652.30 Td (    private final String title;) Tj ET
+BT /F3 7.3 Tf 43 643.90 Td (    Painting\(String title\) { this.title = title; }) Tj ET
+BT /F3 7.3 Tf 43 635.50 Td (    public String describe\(\) {) Tj ET
+BT /F3 7.3 Tf 43 627.10 Td (        return "Painting: " + title + ", framed on canvas";) Tj ET
+BT /F3 7.3 Tf 43 618.70 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 610.30 Td (}) Tj ET
+BT /F3 7.3 Tf 43 598.40 Td (class Sculpture extends ArtPiece {) Tj ET
+BT /F3 7.3 Tf 43 590.00 Td (    private final String title;) Tj ET
+BT /F3 7.3 Tf 43 581.60 Td (    Sculpture\(String title\) { this.title = title; }) Tj ET
+BT /F3 7.3 Tf 43 573.20 Td (    public String describe\(\) {) Tj ET
+BT /F3 7.3 Tf 43 564.80 Td (        return "Sculpture: " + title + ", carved from stone";) Tj ET
+BT /F3 7.3 Tf 43 556.40 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 548.00 Td (}) Tj ET
+BT /F3 7.3 Tf 43 536.10 Td (public class Main {) Tj ET
+BT /F3 7.3 Tf 43 527.70 Td (    public static void main\(String[] args\) {) Tj ET
+BT /F3 7.3 Tf 43 519.30 Td (        Painting p = new Painting\("Sunset Fields"\);) Tj ET
+BT /F3 7.3 Tf 43 510.90 Td (        Sculpture s = new Sculpture\("The Thinker II"\);) Tj ET
+BT /F3 7.3 Tf 43 502.50 Td (        System.out.println\(p.describe\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 494.10 Td (        System.out.println\(s.describe\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 485.70 Td (        System.out.println\(p.getPieceId\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 477.30 Td (        System.out.println\(s.getPieceId\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 468.90 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 460.50 Td (}) Tj ET
+BT /F2 10 Tf 46 449.10 Td (Sample output) Tj ET
+BT /F3 8 Tf 46 436.10 Td (Painting: Sunset Fields, framed on canvas) Tj ET
+BT /F3 8 Tf 46 426.60 Td (Sculpture: The Thinker II, carved from stone) Tj ET
+BT /F3 8 Tf 46 417.10 Td (ART-1001) Tj ET
+BT /F3 8 Tf 46 407.60 Td (ART-1002) Tj ET
+BT /F1 7.5 Tf 46 396.10 Td (Note: The prompt does not specify an ID prefix, so this solution uses ART-1001, ART-1002, and so on.) Tj ET
+endstream
 endobj
 8 0 obj
-<<
-/Count 1 /Kids [ 5 0 R ] /Type /Pages
->>
-endobj
-9 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1544
->>
-stream
-Gb!<ND/\/e&BE\k;]H2S8=,&CorJo4Q6o>h@7.`^^g8R=5teT07[>$WEZ/ckmQ9^UOs;p-Q8c,N-P2?Os8D@R*[t4dV<)X.#'`@bZRZC4L=lX,93dk_$m0(O[mq]c,+JEo_SG`Z&4f1kh[SN8a.j'uOO,\?6?$1=;(qEH%A"LM/+ierZP99,[=ci-*tc7oSsZq!!/TsOO_"Xb>gL:KjO-_p[E-o,NC`9e*f=4?nSarT5QI^$5$(pn=Go9DQ6e611m\RcF7flP?XWT@n^L^eZRH2#fC(@O@7q*;1ZMOF^/\RkT`h'E)BB'V))`>0NDGCJ@3?uUnbgaXp>fH9)@pI^2UF4.[)DGY>fdL.&'&;hqNq"?j_M(TU5pj"\\*\jY$rh<ARlTN->c#GrQ1ni@D.-BeS@YjNVlg))5:u!;otjIQ.8^2V-ZQ+f;Za?m/KCPRP/`HqB!qI'$G+91QB_1@Ts$d:CEqG-bHk12cMk9O)hAVG,Q&keV=jn9`]T1EeC`cdp[`,d.(b6_tu'"d&5lf/hSD>!a'W]l7.I.W@*;<*:AJd!J;R0[fqP@aB/cg1GV^5aYPPhAchRNZr&>#nUIC'(,<aQ@7lp&KS`B\Cg!(s1bR49/gL]$<HEO1F;*>I+s`4lH;>TCeIS4;@!e$>2^ueob=l:($%La<@lqW2?%4eqI$)T0dg0C!,TF[^F'Pf68q@'c.G=SD-oJBQj-2"#"93#W"n8j\@V^!`_aU;]+[Jf=4.qm.h[Wgkl'c@$nCLfY/N_Oo7dueV`qf;torC4VV.#qhG;))X4?FS"8M/r_V!n?PLH^T@MRqPMCJ@C22p=pM"2_'0[I',Yil9(@H'2ZGAImee.m!*6X.ZpJ=r$.o=m0kU6DsaSph&dVj0&3NIT:3om#bt:oL^N0c:%GULBiA0n7g(B'YB5D+PNZAR-1CSi=205="6sQoGSL.Xg)V[?]S?uASUiWk5.6V91!RKrZ>'W@sEMeAo`g^(G]@XIZS4?M;2ka(&hPoWV`?hnTp,Hjs#@6=u?_<rr\WnW^5&"$a`2t)8GL%rFfAFMJK^74AF==M"@b`<'@pY^sQu;@C?g%%@8ai%khn*1gcHZcigBqdj^12O=oapc;O[WeqWfUVl+n=p:PrM*pW"V-u+g>s)9/WR5kl<;kZ.(meIjrl<2Fq$j1H2&iOB281Nf0C3A6iVH5Pa2jtLTk9]AZahV-/:,6IK3A^COfT.errKgpi@t'2M&)?:;7Qld!7W-92F4rZBA?WU1Hs*U\cEW#;pDdn:p5Qjiiu%L"=r+Bg-'$!.Rk@h%-HPpb3m7\Dd^X)\G3jVU"ZqOlAW,/^$"B6uC?oI>1V%X\4Z+[pVQ-(8'ZW#&c:tiIP8@VlN-LU<T#(17W]GJnUI`:.b(^A<Ya\Rhr4r<h#Jf."GhB"QBjO>`0kX+W2c*j73gU6*?7sM]j]rCV-^Rm;5("poW%r,0D[Xt>a,V&K5d%UGk-lIlR2KGpFXl@=M6sQl#eY$uoaGs!Jrf6C*i[b^Xt6l;iJ""@H$SLr+!_j)".;S+D#~>endstream
+<< /Title (Gallery Description Cards) /Author (Week 7 Solutions) /Producer (OpenAI) >>
 endobj
 xref
-0 10
+0 9
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000436 00000 n 
-0000000639 00000 n 
-0000000707 00000 n 
-0000001014 00000 n 
-0000001073 00000 n 
+0000000050 00000 n 
+0000000099 00000 n 
+0000000156 00000 n 
+0000000302 00000 n 
+0000000372 00000 n 
+0000000447 00000 n 
+0000000515 00000 n 
+0000003544 00000 n 
 trailer
-<<
-/ID 
-[<d267b0498160d32804447057d780acf7><d267b0498160d32804447057d780acf7>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 10
->>
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
 startxref
-2708
+3646
 %%EOF

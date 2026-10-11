@@ -1,80 +1,82 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%ASCII PDF generated for Week 7 solution
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
 endobj
 4 0 obj
-<<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<<
-/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 7 0 obj
-<<
-/Author (Week 7 Solutions) /CreationDate (D:20261011070546+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261011070546+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Problem 1 - The Talking Toy Box) /Trapped /False
->>
+<< /Length 2654 >>
+stream
+BT /F2 15 Tf 46 800.00 Td (The Talking Toy Box) Tj ET
+BT /F2 9.5 Tf 46 779.00 Td (Week 7 Practice - Problem 1 \(Basic\)) Tj ET
+BT /F1 8.7 Tf 46 763.00 Td (Toy is abstract and assigns a final toyId using one shared static counter in its constructor.) Tj ET
+BT /F1 8.7 Tf 46 752.00 Td (ToyCar and ToyRobot implement different makeSound\(\) messages.) Tj ET
+BT /F2 10.5 Tf 46 737.00 Td (Java solution) Tj ET
+BT /F3 7.3 Tf 43 723.00 Td (abstract class Toy {) Tj ET
+BT /F3 7.3 Tf 43 714.60 Td (    private static int nextId = 1001;) Tj ET
+BT /F3 7.3 Tf 43 706.20 Td (    private final String toyId;) Tj ET
+BT /F3 7.3 Tf 43 697.80 Td (    Toy\(\) { toyId = "TOY-" + nextId++; }) Tj ET
+BT /F3 7.3 Tf 43 689.40 Td (    public abstract String makeSound\(\);) Tj ET
+BT /F3 7.3 Tf 43 681.00 Td (    String getToyId\(\) { return toyId; }) Tj ET
+BT /F3 7.3 Tf 43 672.60 Td (}) Tj ET
+BT /F3 7.3 Tf 43 660.70 Td (class ToyCar extends Toy {) Tj ET
+BT /F3 7.3 Tf 43 652.30 Td (    private final String name;) Tj ET
+BT /F3 7.3 Tf 43 643.90 Td (    ToyCar\(String name\) { this.name = name; }) Tj ET
+BT /F3 7.3 Tf 43 635.50 Td (    public String makeSound\(\) { return name + ": Vroom vroom!"; }) Tj ET
+BT /F3 7.3 Tf 43 627.10 Td (}) Tj ET
+BT /F3 7.3 Tf 43 615.20 Td (class ToyRobot extends Toy {) Tj ET
+BT /F3 7.3 Tf 43 606.80 Td (    private final String name;) Tj ET
+BT /F3 7.3 Tf 43 598.40 Td (    ToyRobot\(String name\) { this.name = name; }) Tj ET
+BT /F3 7.3 Tf 43 590.00 Td (    public String makeSound\(\) { return name + ": Beep boop!"; }) Tj ET
+BT /F3 7.3 Tf 43 581.60 Td (}) Tj ET
+BT /F3 7.3 Tf 43 569.70 Td (public class Main {) Tj ET
+BT /F3 7.3 Tf 43 561.30 Td (    public static void main\(String[] args\) {) Tj ET
+BT /F3 7.3 Tf 43 552.90 Td (        ToyCar c = new ToyCar\("Speedster"\);) Tj ET
+BT /F3 7.3 Tf 43 544.50 Td (        ToyRobot r = new ToyRobot\("Bolt"\);) Tj ET
+BT /F3 7.3 Tf 43 536.10 Td (        System.out.println\(c.makeSound\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 527.70 Td (        System.out.println\(r.makeSound\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 519.30 Td (        System.out.println\(c.getToyId\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 510.90 Td (        System.out.println\(r.getToyId\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 502.50 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 494.10 Td (}) Tj ET
+BT /F2 10 Tf 46 482.70 Td (Sample output) Tj ET
+BT /F3 8 Tf 46 469.70 Td (Speedster: Vroom vroom!) Tj ET
+BT /F3 8 Tf 46 460.20 Td (Bolt: Beep boop!) Tj ET
+BT /F3 8 Tf 46 450.70 Td (TOY-1001) Tj ET
+BT /F3 8 Tf 46 441.20 Td (TOY-1002) Tj ET
+BT /F1 7.5 Tf 46 429.70 Td (Note: Toy itself cannot be instantiated because it is abstract; only concrete toy types can be created.) Tj ET
+endstream
 endobj
 8 0 obj
-<<
-/Count 1 /Kids [ 5 0 R ] /Type /Pages
->>
-endobj
-9 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1449
->>
-stream
-Gau`SlVH;*&HC$_0g2KK.:McD&JV3uL,;m[B[1?mQ%%Alk7.`hpTe*ITVha9B@d[\bJDRAWCFIOh0Jq\2\-EW=S-*mcZBJ4P/,J5%CQA\*,L[]OM$?-akipY(:g\[#Jd(\ntQImCkmQX_M>UI-$U$.UF;/<opB=fTasfc]oZAo&DWlm0\pLb7,!+6K%<'5[f$c)kBjJq!:rA2,'.du($l]Hn&:;ij>fDT>f-KDLt<3T+ac5LPiSgd71$WNi*E<Yc?Y;t$V3HJnr<?"0]tMU$XGD&S%ISd"FHg31BlY\YhDpja<uqL9;H9>-r,OmR:B):"Q/m)-u_-'>Ms3+7qW=a-@V,Rn8188qK/9=jBd^HJP-V?K]EI`iPfqG/g(aME$B0]>_aOUK5s'!+<'6]@`sda*Zs.VZ3>+JdtZLS6%^ouQktN0b*MYFE68nJKHtAQ@CT*q:4M>?%[AGWSVubSo?bK%R,*#*D2[(eD)]t3+2[>cAa=-I*L!6lDYN<r"+QWIINW\P-*Hd2F-9V?gU__<\Z.oO]6BZ,T'%CQ9Hc$m6qKdX0UH5T7*QI5oN.kK&I,55Fepjaj&7Ri$N9feb_1R!Q^Ff4%e*M-F2<$T'Z@h/:j=IUWra"o#sB"@mWRuC/dkk7?XH?o$b>>UK"p6,De7N*a)`1!0)3XE*3dd4kdZ>Ri)O@"i6MnN51$X!q3n8L\BISL,uI)[GR_)mfuI<nS(p]&e?*:;f#nM5Kd,g0E.5?Iq-q7JI[Xf^L.QFbgYi8F>2KPiA%-r9BtU#P"LeoFKsKdk32LZ:[(e2S)Qd%bJL](H+2B4#e[!tdD@C0-%'8Vo=(,$GO&8(bZ/eR5i48sDR(M,qaD&.\eLQk29Mef9`Uj<gC$Z6>C.mHUY>NG)_[QZ:Clugt@UnX&-El>D.B).TqX^c0na<oVQ@$WmNPYWBp(P@Zb_0(](3s]%+lF`>Q^\"7pMFuR7@oY%]^-j=r=@h,;/Io"[Z"*)(Z+dq0U]'TZ\mo$A5M5PXX4AF?EYYpEZtju<G?bLp6JD%MG]+#<=ls1N>QuARf%AE.2t2*e"&Y![3]GrD'L*=0Yr5\pJ\684e1,=<NFr>h@6T:39`eLI26t#5%9Lm]5c]X`OKc3&p3i&<S_$GdAnYnk(0js2-TsMK=)f>%DDPq7`ao\$)GsH*UHldm-mU$7O>VU0f+@JntNo'0,SP`lADI_bVV4YORf-=;1iJXV6lF8=f4k_=QfU2)SLfn/!O]Ma1DWqn*/*?<8nN`rFWuPDO(r5db[Jp5g2F?47`atMJM%3^K&&UULA=No>'M_(Y&,9=u<<4;+gsMj&KF!Jp)D[XKFrh^*n+t8#pNc^%hSc_4+ZX&s_.l,^ucb-?M9kSlQISP\\L'+kL3"L7<ZW1/p@h)QC9m$>kIm<SWd/'^?J@-\C(f9@d[rBjkk%/SlDF&d`o7"/lF/EW~>endstream
+<< /Title (The Talking Toy Box) /Author (Week 7 Solutions) /Producer (OpenAI) >>
 endobj
 xref
-0 10
+0 9
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000436 00000 n 
-0000000639 00000 n 
-0000000707 00000 n 
-0000001008 00000 n 
-0000001067 00000 n 
+0000000050 00000 n 
+0000000099 00000 n 
+0000000156 00000 n 
+0000000302 00000 n 
+0000000372 00000 n 
+0000000447 00000 n 
+0000000515 00000 n 
+0000003220 00000 n 
 trailer
-<<
-/ID 
-[<67483e9f53ed82faa765328a287524b6><67483e9f53ed82faa765328a287524b6>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 10
->>
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
 startxref
-2607
+3316
 %%EOF

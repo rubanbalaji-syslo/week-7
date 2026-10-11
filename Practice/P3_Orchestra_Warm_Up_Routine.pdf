@@ -1,80 +1,79 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%ASCII PDF generated for Week 7 solution
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
 endobj
 4 0 obj
-<<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<<
-/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 7 0 obj
-<<
-/Author (Week 7 Solutions) /CreationDate (D:20261011070546+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261011070546+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Problem 3 - Orchestra Warm-Up Routine) /Trapped /False
->>
+<< /Length 2608 >>
+stream
+BT /F2 15 Tf 46 800.00 Td (Orchestra Warm-Up Routine) Tj ET
+BT /F2 9.5 Tf 46 779.00 Td (Week 7 Practice - Problem 3 \(Intermediate\)) Tj ET
+BT /F1 8.7 Tf 46 763.00 Td (The hierarchy is Instrument -> StringInstrument -> Violin. Each subclass calls super\(\) in its) Tj ET
+BT /F1 8.7 Tf 46 752.00 Td (constructor and layers its detail on the prior play\(\) result.) Tj ET
+BT /F2 10.5 Tf 46 737.00 Td (Java solution) Tj ET
+BT /F3 7.3 Tf 43 723.00 Td (abstract class Instrument {) Tj ET
+BT /F3 7.3 Tf 43 714.60 Td (    // Concrete base method is needed for super.play\(\) to compile.) Tj ET
+BT /F3 7.3 Tf 43 706.20 Td (    public String play\(\) { return ""; }) Tj ET
+BT /F3 7.3 Tf 43 697.80 Td (}) Tj ET
+BT /F3 7.3 Tf 43 685.90 Td (class StringInstrument extends Instrument {) Tj ET
+BT /F3 7.3 Tf 43 677.50 Td (    StringInstrument\(\) { super\(\); }) Tj ET
+BT /F3 7.3 Tf 43 669.10 Td (    @Override public String play\(\) {) Tj ET
+BT /F3 7.3 Tf 43 660.70 Td (        return super.play\(\) + "Strumming the strings";) Tj ET
+BT /F3 7.3 Tf 43 652.30 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 643.90 Td (}) Tj ET
+BT /F3 7.3 Tf 43 632.00 Td (class Violin extends StringInstrument {) Tj ET
+BT /F3 7.3 Tf 43 623.60 Td (    Violin\(\) { super\(\); }) Tj ET
+BT /F3 7.3 Tf 43 615.20 Td (    @Override public String play\(\) {) Tj ET
+BT /F3 7.3 Tf 43 606.80 Td (        return super.play\(\) + ", with a bow drawn across four strings";) Tj ET
+BT /F3 7.3 Tf 43 598.40 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 590.00 Td (}) Tj ET
+BT /F3 7.3 Tf 43 578.10 Td (public class Main {) Tj ET
+BT /F3 7.3 Tf 43 569.70 Td (    public static void main\(String[] args\) {) Tj ET
+BT /F3 7.3 Tf 43 561.30 Td (        StringInstrument s = new StringInstrument\(\);) Tj ET
+BT /F3 7.3 Tf 43 552.90 Td (        Violin v = new Violin\(\);) Tj ET
+BT /F3 7.3 Tf 43 544.50 Td (        System.out.println\(s.play\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 536.10 Td (        System.out.println\(v.play\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 527.70 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 519.30 Td (}) Tj ET
+BT /F2 10 Tf 46 507.90 Td (Sample output) Tj ET
+BT /F3 8 Tf 46 494.90 Td (Strumming the strings) Tj ET
+BT /F3 8 Tf 46 485.40 Td (Strumming the strings, with a bow drawn across four strings) Tj ET
+BT /F1 7.5 Tf 46 473.90 Td (Note: Source conflict: Instrument.play\(\) is requested as abstract, but StringInstrument is also required) Tj ET
+BT /F1 7.5 Tf 46 464.90 Td (to call super.play\(\). Java cannot call an abstract method with super. This compilable version keeps) Tj ET
+BT /F1 7.5 Tf 46 455.90 Td (Instrument abstract and makes play\(\) a concrete empty base method.) Tj ET
+endstream
 endobj
 8 0 obj
-<<
-/Count 1 /Kids [ 5 0 R ] /Type /Pages
->>
-endobj
-9 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1307
->>
-stream
-GauHJgMRrh&:N/3$k*hHg5')'IHqY^j2Pqn'R!uoH"d%>m8>^/]nPOi0bXM5LYRf*lc;AEY$frFcK1QP_]^Hgpn@CC/HDBeiUh^'F^_uel4Y9%0B)_Snnpd'06(\3,`\B;Ne&H4$N16:rB)OFNsUg+,R2RB%Lo-4$4-Qc3,odQeoJ9lF9uCi59XGOSs\.r"N1iK`,U>2Ic+Tn\M=Z%"$'nc$&O'h5`c.C?ZZ2^,+-3-$`,.B[AZ]*AHje[c/k+b>WmZ65;<,kAD.A,\<KCQ+7=lq@Ohq1bN!dl59Oo+.T%0.7aFHLN&Jc+`DtnY8-Imu5o>C6*de3?PMu/N"`!k.-.9h):?";8^7T&*?WN)T(Z6I39:=XU6OI-U=j6lDiDnEA;=YdbCtI@7*QK,=gN_PmTh.6%,\(RN#f4BSOP"HTBPA:r5D_G*Sb=/aS8#^;j;g@8.pIXjj6Egabs59S@qmbu@C?j0':?ID8)k)clVT;jQlj32p?`e9^qHC&'ckW`3a;Ci$V*>nDpZD,+1[!fM\9gT'YMrbSP:o2_6oT'>`HGm;cL:U$(P(.._4\<XgsZ?isHQ]a>;1%>Y$9Q;V6l:GR#\@d:EK]WOX9scL0O_h`QIdO@k_s`53et&ji0k7@bC5[]JXl`fI#-*02@NlE@?9?WOI?>4_*<8N,fZgt@t&3H/?6#WrBK'g"6&Lk0\q*7C?+"^ChPkeTpnT=S1d,)*kG/I1prSINU5rEo952X3Tqpj:9/m!-*i7pDf#D:r`/\DM<'iNb!4_ncPuHPt(\h:'FX:9I=&_AHeKJ?jXhjD;m9rf`;qSfDtr#VaE0Fo$SImWJLfE:O]\Kt[QlMs;'5a_l+^Vm8WEbGp\sWBpif(#q6-;N*A3Rc.e0FX8dkR,Qm7q!2j+Ehu53*,)>0HRS^WBX=3L\9F3@G>9+%%o'7rPi`.c'8"^N>3BRs#0e4TZ$t&07(e;87mBV#D>t\)c8@Bk#;-s$2u<<RnH8MALJ<FhS](K.M+O2,[`QR5eKD]lgW0!J;=WH:98N<M@LsGq/,<3df?V8i@Ztn-/,Y6I0*Lu2SBd7Hc(o(@^$.*D]1,=R_YT9:,J0YKlWg*BO`A?5/m7&'I8B5fDJqEVV9OiVP[eVq(dF<tVE@2G[N&O.O[%j4o\tl.is)3`>p%BVYlFSc4MM[chJP+8$bRr@QkJ[gkcRigQRS.rX@f8;C#.[IY(!r)nGKuU)p2(GKJmGP+L)ud3gXWRSUiJ,jpeX5j&UocC+8_DB7T",C/>Q3,a]X"3:2cRfp!f#.o^l`o/?-QO>-JH6*X9P~>endstream
+<< /Title (Orchestra Warm-Up Routine) /Author (Week 7 Solutions) /Producer (OpenAI) >>
 endobj
 xref
-0 10
+0 9
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000436 00000 n 
-0000000639 00000 n 
-0000000707 00000 n 
-0000001014 00000 n 
-0000001073 00000 n 
+0000000050 00000 n 
+0000000099 00000 n 
+0000000156 00000 n 
+0000000302 00000 n 
+0000000372 00000 n 
+0000000447 00000 n 
+0000000515 00000 n 
+0000003174 00000 n 
 trailer
-<<
-/ID 
-[<eaa7915d97a30a9fa4ba9f4f610c7855><eaa7915d97a30a9fa4ba9f4f610c7855>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 10
->>
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
 startxref
-2471
+3276
 %%EOF

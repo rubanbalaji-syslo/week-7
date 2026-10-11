@@ -1,80 +1,91 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%ASCII PDF generated for Week 7 solution
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
 endobj
 4 0 obj
-<<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<<
-/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 7 0 obj
-<<
-/Author (Week 7 Solutions) /CreationDate (D:20261011070546+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261011070546+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Problem 4 - Smart Kitchen Assistant) /Trapped /False
->>
+<< /Length 3245 >>
+stream
+BT /F2 15 Tf 46 800.00 Td (Smart Kitchen Assistant) Tj ET
+BT /F2 9.5 Tf 46 779.00 Td (Week 7 Practice - Problem 4 \(Intermediate\)) Tj ET
+BT /F1 8.7 Tf 46 763.00 Td (KitchenTool encapsulates speedLevel in a private field and exposes JavaBean-style methods. The) Tj ET
+BT /F1 8.7 Tf 46 752.00 Td (setter checks the range before assigning. Blender also implements Washable.) Tj ET
+BT /F2 10.5 Tf 46 737.00 Td (Java solution) Tj ET
+BT /F3 7.3 Tf 43 723.00 Td (abstract class KitchenTool {) Tj ET
+BT /F3 7.3 Tf 43 714.60 Td (    private int speedLevel = 1;) Tj ET
+BT /F3 7.3 Tf 43 706.20 Td (    public abstract String prepare\(\);) Tj ET
+BT /F3 7.3 Tf 43 694.30 Td (    int getSpeedLevel\(\) { return speedLevel; }) Tj ET
+BT /F3 7.3 Tf 43 682.40 Td (    void setSpeedLevel\(int speedLevel\) {) Tj ET
+BT /F3 7.3 Tf 43 674.00 Td (        if \(speedLevel < 1 || speedLevel > 5\) {) Tj ET
+BT /F3 7.3 Tf 43 665.60 Td (            throw new IllegalArgumentException\() Tj ET
+BT /F3 7.3 Tf 43 657.20 Td (                "speedLevel must be between 1 and 5"\);) Tj ET
+BT /F3 7.3 Tf 43 648.80 Td (        }) Tj ET
+BT /F3 7.3 Tf 43 640.40 Td (        this.speedLevel = speedLevel;) Tj ET
+BT /F3 7.3 Tf 43 632.00 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 623.60 Td (}) Tj ET
+BT /F3 7.3 Tf 43 611.70 Td (interface Washable {) Tj ET
+BT /F3 7.3 Tf 43 603.30 Td (    String clean\(\);) Tj ET
+BT /F3 7.3 Tf 43 594.90 Td (}) Tj ET
+BT /F3 7.3 Tf 43 583.00 Td (class Blender extends KitchenTool implements Washable {) Tj ET
+BT /F3 7.3 Tf 43 574.60 Td (    public String prepare\(\) {) Tj ET
+BT /F3 7.3 Tf 43 566.20 Td (        return "Blending at speed " + getSpeedLevel\(\);) Tj ET
+BT /F3 7.3 Tf 43 557.80 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 549.40 Td (    public String clean\(\) { return "Blender rinsed and dried"; }) Tj ET
+BT /F3 7.3 Tf 43 541.00 Td (}) Tj ET
+BT /F3 7.3 Tf 43 529.10 Td (public class Main {) Tj ET
+BT /F3 7.3 Tf 43 520.70 Td (    public static void main\(String[] args\) {) Tj ET
+BT /F3 7.3 Tf 43 512.30 Td (        Blender b = new Blender\(\);) Tj ET
+BT /F3 7.3 Tf 43 503.90 Td (        b.setSpeedLevel\(3\);) Tj ET
+BT /F3 7.3 Tf 43 495.50 Td (        System.out.println\(b.getSpeedLevel\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 487.10 Td (        try {) Tj ET
+BT /F3 7.3 Tf 43 478.70 Td (            b.setSpeedLevel\(9\);) Tj ET
+BT /F3 7.3 Tf 43 470.30 Td (        } catch \(IllegalArgumentException e\) {) Tj ET
+BT /F3 7.3 Tf 43 461.90 Td (            System.out.println\("rejected, speed level stays ") Tj ET
+BT /F3 7.3 Tf 43 453.50 Td (                + b.getSpeedLevel\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 445.10 Td (        }) Tj ET
+BT /F3 7.3 Tf 43 436.70 Td (        System.out.println\(b.prepare\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 428.30 Td (        System.out.println\(b.clean\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 419.90 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 411.50 Td (}) Tj ET
+BT /F2 10 Tf 46 400.10 Td (Sample output) Tj ET
+BT /F3 8 Tf 46 387.10 Td (3) Tj ET
+BT /F3 8 Tf 46 377.60 Td (rejected, speed level stays 3) Tj ET
+BT /F3 8 Tf 46 368.10 Td (Blending at speed 3) Tj ET
+BT /F3 8 Tf 46 358.60 Td (Blender rinsed and dried) Tj ET
+BT /F1 7.5 Tf 46 347.10 Td (Note: Invalid values throw IllegalArgumentException and leave the previously accepted speed unchanged.) Tj ET
+endstream
 endobj
 8 0 obj
-<<
-/Count 1 /Kids [ 5 0 R ] /Type /Pages
->>
-endobj
-9 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1585
->>
-stream
-Gatm;D/\/e&H88.E<n86h%E3,]9dA:dO&2-%aASfrNPVj/MT.f=`R*V8[.j%mmt,oZK4.%WW]aR*UfSHmPu=W_8/?N5EdD/jV6"C.8UhXG<gT9_t4CC9ohIZOk:Vb1^"F]:(YH2`\\&$#laV`-jMs`1lfU2GWp+\&-]:k^lO9bLZ.B%#*YfC5]$@Z8Q`SP`chspnH4:-\3L*[E6t/GRg$/'fg_ZF')QQs+I=d.a8#sri"ReU8kYI`;<5O`'OKskb<)#/o`D#Z@J[Bge8Z;7PXM)bp>+Q/3="8@nN/)T,&lgHU,YDsSqj*ZDD4j&mh46g6kI'KKQ63m_0<[R&^IObTJh;,`:U%hid)[g:K%ZTMcn&dBR1#L-'K6r'foLe*%mHg9!_b]fM6cD/^e(/@GJieNZC.j>E!*KBa;9X.YY--6A76)M*I#8Uc%U:n<.KL0B=?__N!YAiHY)5[Uu1iX>KTH)pDS0T>BlRHi2H^?&s;o_7U;^gIO7WJ/^CneJsV47%JR_ICpSP7X\#o)knt2Zm[\30Ehkc;QPun:b0i?2gik+?jWi0$,co>68)`l2/6'\WTs?`egqI`/lLh5M-gth65J[1!PsUmo4>r5PY2S2'kYC*h/YQ&a4,^7DfRh`0_W3`Y:g99!ct_KIT`KEE+gnDLg,Z6l:1?V67s.QTAD9D"t@SMY"S&WnK8s?pQ.cY"0:/sP)Lgnh)bJi;?M/$oan\%f&V1NkDe<;[[^nQJ_'Q`99IQJ"^a"+Db%8ip9$.<Z*'9KK!F0a@P5cF.J"%4o:F(%IK%iP83unNoMZY:-goo9e4KO!,kgK%9>h>P%'DFR&`Gn6r#T0W)5"8%6I&6!^8m$BY=r`hNfH38QDN"`j7ohH3Gr$MC,\-?nCII9Zu\_jKHe)B*Frm6k=[XY4u?!=Puq>=,i^HEQ#k,G-*!j,pk-R.I?A@bEF5fYE4(m%%\UsEp%s-0e3CZQF",)*S[s8n[CBRLa#9kNB=1(a(r"\Rk994U#>iV*+ZN"</l7ACLa&+9VoR+6CE9W/b&9u7_bB*8e4lhldHYmS62^=-?uiCS&N7^BW&CFB::56k4!Rr=kRCZh*gPk\;O!X.hNR76J]u1FpHqS2NmZf\g^-+blmYIB8ebKY?b`>$pNHEFn70Sto)uPeP?LJED,$i&;-?UV1UGnT+/Z"^n)ncH8oUu.2hKb-V"<BGSPT8q1esFk(Z9/0=/G?(*/s/PdD)3/&Pc4:2a];H<H)]*HYp?dX4kR.GF-s.2UJabG]X&V9CV^4c5iV;^5sGd1MF_5]_e>HDk1km<-)(_0O8Xr:1p-(g!#\9")^G7SsumgXOnDI#=$[@9p;9A\KQ"*\2r,J.>l7Tcgca3qlJo6g)(60Sh*u-k:(+(Vj/ga\-XC3!`+l$7?O0BIDX^I*SUY8l\mLL=qjjtj#H8N9s"U/.)+kdMWre%[_I$Rp)BmhN]8CT.<.&f(r"%<$h`gQkN-,>le/:`O19IX:#P<Qp6;k.9)c(0Z6$Zg;4)X-\6SXtHo$p9>#MMka==5PJbrl5"T_o9PUDW`K->lC3R>i'cg<!e#?tL<hBikqrW.j5,Ja~>endstream
+<< /Title (Smart Kitchen Assistant) /Author (Week 7 Solutions) /Producer (OpenAI) >>
 endobj
 xref
-0 10
+0 9
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000436 00000 n 
-0000000639 00000 n 
-0000000707 00000 n 
-0000001012 00000 n 
-0000001071 00000 n 
+0000000050 00000 n 
+0000000099 00000 n 
+0000000156 00000 n 
+0000000302 00000 n 
+0000000372 00000 n 
+0000000447 00000 n 
+0000000515 00000 n 
+0000003811 00000 n 
 trailer
-<<
-/ID 
-[<fc6553263d99192b1b59c49e907c27aa><fc6553263d99192b1b59c49e907c27aa>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 10
->>
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
 startxref
-2747
+3911
 %%EOF

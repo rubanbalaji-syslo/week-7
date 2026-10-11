@@ -1,80 +1,82 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%ASCII PDF generated for Week 7 solution
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
 endobj
 4 0 obj
-<<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<<
-/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 7 0 obj
-<<
-/Author (Week 7 Solutions) /CreationDate (D:20261011070546+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261011070546+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Problem 2 - Warehouse Label Printer) /Trapped /False
->>
+<< /Length 2583 >>
+stream
+BT /F2 15 Tf 46 800.00 Td (Warehouse Label Printer) Tj ET
+BT /F2 9.5 Tf 46 779.00 Td (Week 7 Practice - Problem 2 \(Basic\)) Tj ET
+BT /F1 8.7 Tf 46 763.00 Td (Printable is the shared capability. PackageBox and Invoice implement it directly without a common) Tj ET
+BT /F1 8.7 Tf 46 752.00 Td (parent; printAll\(\) works with a mixed array.) Tj ET
+BT /F2 10.5 Tf 46 737.00 Td (Java solution) Tj ET
+BT /F3 7.3 Tf 43 723.00 Td (interface Printable {) Tj ET
+BT /F3 7.3 Tf 43 714.60 Td (    String printLabel\(\);) Tj ET
+BT /F3 7.3 Tf 43 706.20 Td (}) Tj ET
+BT /F3 7.3 Tf 43 694.30 Td (class PackageBox implements Printable {) Tj ET
+BT /F3 7.3 Tf 43 685.90 Td (    private final String trackingId;) Tj ET
+BT /F3 7.3 Tf 43 677.50 Td (    PackageBox\(String trackingId\) { this.trackingId = trackingId; }) Tj ET
+BT /F3 7.3 Tf 43 669.10 Td (    public String printLabel\(\) {) Tj ET
+BT /F3 7.3 Tf 43 660.70 Td (        return "Package label: " + trackingId;) Tj ET
+BT /F3 7.3 Tf 43 652.30 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 643.90 Td (}) Tj ET
+BT /F3 7.3 Tf 43 632.00 Td (class Invoice implements Printable {) Tj ET
+BT /F3 7.3 Tf 43 623.60 Td (    private final String invoiceNumber;) Tj ET
+BT /F3 7.3 Tf 43 615.20 Td (    Invoice\(String invoiceNumber\) { this.invoiceNumber = invoiceNumber; }) Tj ET
+BT /F3 7.3 Tf 43 606.80 Td (    public String printLabel\(\) {) Tj ET
+BT /F3 7.3 Tf 43 598.40 Td (        return "Invoice label: " + invoiceNumber;) Tj ET
+BT /F3 7.3 Tf 43 590.00 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 581.60 Td (}) Tj ET
+BT /F3 7.3 Tf 43 569.70 Td (public class Main {) Tj ET
+BT /F3 7.3 Tf 43 561.30 Td (    static void printAll\(Printable[] items\) {) Tj ET
+BT /F3 7.3 Tf 43 552.90 Td (        for \(Printable item : items\) {) Tj ET
+BT /F3 7.3 Tf 43 544.50 Td (            System.out.println\(item.printLabel\(\)\);) Tj ET
+BT /F3 7.3 Tf 43 536.10 Td (        }) Tj ET
+BT /F3 7.3 Tf 43 527.70 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 519.30 Td (    public static void main\(String[] args\) {) Tj ET
+BT /F3 7.3 Tf 43 510.90 Td (        PackageBox p = new PackageBox\("TRK-88"\);) Tj ET
+BT /F3 7.3 Tf 43 502.50 Td (        Invoice i = new Invoice\("INV-42"\);) Tj ET
+BT /F3 7.3 Tf 43 494.10 Td (        printAll\(new Printable[] { p, i }\);) Tj ET
+BT /F3 7.3 Tf 43 485.70 Td (    }) Tj ET
+BT /F3 7.3 Tf 43 477.30 Td (}) Tj ET
+BT /F2 10 Tf 46 465.90 Td (Sample output) Tj ET
+BT /F3 8 Tf 46 452.90 Td (Package label: TRK-88) Tj ET
+BT /F3 8 Tf 46 443.40 Td (Invoice label: INV-42) Tj ET
+BT /F1 7.5 Tf 46 431.90 Td (Note: The loop depends on Printable, not on the concrete item type.) Tj ET
+endstream
 endobj
 8 0 obj
-<<
-/Count 1 /Kids [ 5 0 R ] /Type /Pages
->>
-endobj
-9 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1412
->>
-stream
-Gat:DM/\/e&H88.E<n86h&8cOU/DD%P;QRqY0@kprNPVj/^_!B=]-[uNfiJ=mmt-ZEoa)dWrS/3o'Uek\N:jLYjfuiTCE9HF:-(O2V8L5k?rYTKBX>"2*L_Z5c>V^Fo[2MQ;8rka:8;*K_N5%jPWmE;]8MP4_!)nkedaT0-h;BK'g/YXq"V8Wr,@4B\a?`gCJj[^)'o^&E!(2F=.jH^hua;.!A"WkP.Sg"d9Ieh`qH;n8_Q$_.&fJ3NtVsMd19WB/-T]_=TsZrhtneGJ7RNd.N!a]1]Tj?lKl2@IQD^WspAN5&taN'MW:oEB<l\3#2^MoNa\SJ\+;,!`'sZT0$HHpi.[9Dd2E^$upQ]+M9+7)..rI!I\@-08mF$n:o24#+$N6+a)S##*t_B37i\L>b/sAUS-d@`g!pID5c/"kt5WV"p+7gNbPQk-TGV!0++t8;e2j!O#arQKAA;]MQBkSW4&3j+.qNY7K\'CcAl\PU#N_GYLAc>Y6]>e%^J*Tk?%q[V3gpeYEQnA&6O=4'm!R6[5E/4W;+hAM7>[7:!slaJ0YjlQJ"`GN*-WH%](SX4tE5?CkFrklcUikSm4J^\J.KG=9=+THACfj5>2?k+]$,m7)AWEn>oHk8D[nLX@W-8d$S8$[*V$B$9g,]MFkpR9.&;i]KZ#l-*>*<pdC#[OAL!h]2gh#\F4*)!1tcu$]@J@h(;7;(]BYTm[O1jB<8,K86qjjC+fR5^;WEoH()(@K2^sX%=YiY?48dEZRh(FK^6`)$dA-(Ai[!7p)X'I\qGiidpLtfEZrkaGO@t27]1j]>3'YT_F(3O:>c\4g>dTTSO\tCQ-uIfrS)WUj'kuY(87(,@'N^En/;HK3rW0>\hFSQp&YY6C&o6\ra]`WUIlgM*ef-Y&u2d[%KH5?;TW"*@Pb5e&,$AJHhC,nq2BlBJPCjaUo5TeGZfJY;&3[Z]\+'kkto<,S4:NBOB*3<QTC(ZM8_G1UWZ9R?I%/T[Q'ekIsj`Li>AW0"C&LP?k+jHrdEifUIJIe23]9Y4d=:?f>FcA8:pSqI4o^>F6sp,e17Db$Js==XQ:7gVI&bWVeLtIM9tZEV5+.$c&'tNI%u0E_+m3O69coWj*VA?IP98Siik&R:%bkCDIaWXj!3:g7q[#&=&iOl=ir6WC%0.Umop)4,o96^,)\S<&=DI?>Sg,0j&WurksM!LT&HZ84GWSbc1l7(lPO$#asD$)^k59t8rc9Q(HUM$cP(FZ+d.HGBA=;^G*d(M+5c"'Ak$&(_!_4mEqNKRC)"ll;%'I])6;3N"PRX`ETohndRC<.`,XJds"8da-h-Crf6O2G4G&'anH.36&el8WiY<9=*%+TJ@iF/:/m4W#]B3gn@8]p@=nLFeJua17+R\YEU<[hN;12$p%IgN^E:?)=X+cE~>endstream
+<< /Title (Warehouse Label Printer) /Author (Week 7 Solutions) /Producer (OpenAI) >>
 endobj
 xref
-0 10
+0 9
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000436 00000 n 
-0000000639 00000 n 
-0000000707 00000 n 
-0000001012 00000 n 
-0000001071 00000 n 
+0000000050 00000 n 
+0000000099 00000 n 
+0000000156 00000 n 
+0000000302 00000 n 
+0000000372 00000 n 
+0000000447 00000 n 
+0000000515 00000 n 
+0000003149 00000 n 
 trailer
-<<
-/ID 
-[<2e1dbe25f772f64c689bdead1d1e0abd><2e1dbe25f772f64c689bdead1d1e0bad>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 10
->>
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
 startxref
-2573
+3249
 %%EOF
